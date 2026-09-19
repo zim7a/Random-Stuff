@@ -8,6 +8,7 @@ import os
 root = tk.Tk()
 root.title("For You ❤️")
 
+#change accordingly
 WIDTH = root.winfo_screenwidth()
 HEIGHT = root.winfo_screenheight()
 
@@ -16,6 +17,7 @@ TEXT = "#FFFFFF"
 STAR_COUNT = 90
 TYPING_SPEED = 0.055
 
+#change accordingly
 MUSIC_FILE = r"C:\Users\ASUS\OneDrive\Documents\GitHub\Random Stuff\Love.mp3"
 
 root.attributes("-fullscreen", True)
@@ -38,7 +40,7 @@ for _ in range(STAR_COUNT):
         "x": random.randint(0, WIDTH),
         "y": random.randint(0, HEIGHT),
         "speed": random.uniform(2, 6),
-        "symbol": random.choice(["♥", "❤️", "❄️", "*"])
+        "symbol": random.choice(["♥", "❤️", "❄️", "*"]) #change accordingly
     })
 
 
@@ -119,6 +121,7 @@ def play_music():
     except Exception as e:
         print("Music error:", e)
 
+#change accordingly
 def lyrics():
 
     threading.Thread(
